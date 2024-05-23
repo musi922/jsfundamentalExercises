@@ -18,10 +18,16 @@ console.log(movecharsforwad("abc"));
 
 const formatDate = (date=new Date())=>{
     const day = date.getDate();
-    const month = date.getMonth();
-    const year = date.getFullYear();
+    const month = date.getMonth() + 1;
+    const year = date.getFullYear() + 1;
     
 
     return `${day}/${month}/${year}`
 }
 console.log(formatDate());
+
+//fifth serie
+
+const newstr = (str)=> str.includes("New!")?str:"New!"+str;
+console.log(newstr("hello"));
+console.log(newstr("New!hello"));
