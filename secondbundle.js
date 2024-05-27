@@ -15,3 +15,5 @@ const twostr = (str1,str2)=>str1.slice(1) + str2.slice(1)
 console.log(twostr("pirlo","gang"));
 //given two values find the one nearest two 100
 
+const twoval = (val1,valu2)=> (100-val1)<(100-val1)?val1:valu2
+console.log(twoval(30,90));
