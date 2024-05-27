@@ -9,3 +9,9 @@ const extract = (stri) =>stri.slice(0 , stri.length/2)
 console.log(extract("code"));
 console.log(extract("genius"));
 console.log(extract("pirlo"));
+//concatinat two strings except there first characters
+
+const twostr = (str1,str2)=>str1.slice(1) + str2.slice(1)
+console.log(twostr("pirlo","gang"));
+//given two values find the one nearest two 100
+
