@@ -1,11 +1,4 @@
-
-const formatDate = (date=new Date())=>{
-    const day = date.getDate();
-    const month = date.getMonth() + 1;
-    const year = date.getFullYear() + 1;
-    
-
-    return `${day}/${month}/${year}`
-}
-console.log(formatDate());
-
+const result = (str)=>str.length < 3?str:str.slice(0,3) + str.slice(-3);
+console.log(result("musimerichard"));
+console.log(result("ri"));
+console.log(result("ric"));
