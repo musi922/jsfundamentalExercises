@@ -28,3 +28,6 @@ let arrayofnumbers=(numbe)=>{
     return result
 }
 console.log(arrayofnumbers([1,2,3,4]));
+//simple way
+let arrayofnumber=(numbe)=>numbe.filter(a=>a%2===0)
+console.log(arrayofnumber([1,2,3,4]));
