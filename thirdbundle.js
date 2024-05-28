@@ -16,3 +16,15 @@ let evenn = (arr)=> arr.filter(el=> el%2===0).length;
 console.log(evenn([1,2,3,4]));
 console.log(evenn([1,2,3,4,5,6,7,8]));
 console.log(evenn([1,2,3,4,9,10,12,11]));
+//given array create array of even numbers 
+let arrayofnumbers=(numbe)=>{
+    let result = []
+    for (let item of numbe){
+        if(item%2===0){
+             result.push(item)
+        }
+    }
+
+    return result
+}
+console.log(arrayofnumbers([1,2,3,4]));
