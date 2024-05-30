@@ -1,11 +1,12 @@
-function greet(name){
-    console.log( `iam ${name} my sec is ${this.job}`)
-}
-const sec = {
-    job: "pirlo"
-}
+const extratednumber = (input) => {
+    let output = [];
+    for (let item of input){
+        let match = item.match(/[a-zA-Z]+|\d+/g);
+         output.push(...match.map(el=>isNaN(el)?el:parseInt(el)))
+    }
+    return output
 
-greet.call(sec,["richard"])
-greet.apply(sec,["richard"])
-const bindfunction = greet.bind(sec,"ric")
-console.log(bindfunction());
+};
+
+const input = ["Hello123", "World456", "49", "Another789"];
+console.log(extratednumber(input));
