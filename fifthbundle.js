@@ -13,3 +13,9 @@ const giventext = (stri)=>{
 }
 console.log(giventext('webmaster'))
 console.log(giventext('RichardmusimeusbhgdusnmxA'))
+//given money you turn them into coins
+const givenmoney = (money)=>{
+    let results = [];``
+    
+    
+}
